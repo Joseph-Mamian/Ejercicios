@@ -29,8 +29,15 @@ void returnBook() {
     public boolean isAvilable() {
         return avilable;
     }
+ 
+public void Quantity(int quantity){
+    this.quantity= quantity;
+}
+  public int gggg(){
+      return quantity;
+  }
 
-
+      
 
 
 }
