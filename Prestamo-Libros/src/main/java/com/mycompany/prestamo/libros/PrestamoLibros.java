@@ -33,15 +33,43 @@ public class PrestamoLibros {
         System.out.println("Escriba la id del numero que quiere alquilar");
         int Q= leer.nextInt();
         
+        switch(Q){
         
-        if (Q==1){
+            case 1:
+               
             if (book1.gggg()>0){
             System.out.println("Hay libros que pueden ser prestados");
-        }
+            }
         else if (book1.gggg()<=0){
             System.out.println("No hay libros que pueden ser prestados");
-        }
-    }
+            }
+            case 2:
+               
+            if (book2.gggg()>0){
+            System.out.println("Hay libros que pueden ser prestados");
+            }
+        else if (book2.gggg()<=0){
+            System.out.println("No hay libros que pueden ser prestados");
+            }
+            case 3:
+               
+            if (book3.gggg()>0){
+            System.out.println("Hay libros que pueden ser prestados");
+            }
+        else if (book3.gggg()<=0){
+            System.out.println("No hay libros que pueden ser prestados");
+            }
+            case 4:
+               
+            if (book4.gggg()>0){
+            System.out.println("Hay libros que pueden ser prestados");
+            }
+        else if (book4.gggg()<=0){
+            System.out.println("No hay libros que pueden ser prestados");
+            }
         
-    }
-}
+      }
+    
+    }    
+  }
+
