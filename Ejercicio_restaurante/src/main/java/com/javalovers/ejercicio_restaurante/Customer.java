@@ -1,6 +1,4 @@
-package people;
-
-import values.CustomerRole;
+package com.javalovers.ejercicio_restaurante;
 
 public class Customer {
     CustomerRole role;
@@ -26,7 +24,7 @@ public class Customer {
     
     public void sellFood(){
     if (this.role != CustomerRole.ADMINISTRATIVE){
-    System.out.println("Usted no tiene ");
+    System.out.println("Usted no tiene permiso para vender");
     return;
     }
     System.out.println("Ya te atiendo wey");

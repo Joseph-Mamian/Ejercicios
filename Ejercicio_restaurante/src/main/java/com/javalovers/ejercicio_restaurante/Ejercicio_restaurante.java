@@ -1,8 +1,5 @@
 package com.javalovers.ejercicio_restaurante;
 import java.util.Scanner;
-import menu.Food;
-import values.CustomerRole;
-import people.Customer;
 
 
 public class Ejercicio_restaurante {
@@ -11,8 +8,26 @@ public class Ejercicio_restaurante {
         Scanner sc = new Scanner(System.in);
         
         Customer administrative= new Customer(CustomerRole.ADMINISTRATIVE, "1", "Pepito Perez");
+        Customer student= new Customer(CustomerRole.STUDENT, "1", "Pepito Perez");
         administrative.sellFood();
-        /*Food food1= new Food("calentado",1,20,"Breakfast");
+        student.sellFood();
+        
+        
+        Menu menu = new Menu();
+        
+        Food breakfast1= new Food(DishType.BREAKFAST, "huevos fritos",2400, "huevos, sal, primienta", 20 );
+        Food breakfast2= new Food(DishType.BREAKFAST, "Caldo",2400, "carne, papa, platano", 20 );
+        Food lunch1= new Food(DishType.LAUNCH, "pastas",2400, "pastas, albondiga, arroz", 20 );
+        
+        menu.addFood(breakfast1);
+        menu.addFood(breakfast2);
+        menu.addFood(lunch1);
+    }
+}
+
+
+
+/*Food food1= new Food("calentado",1,20,"Breakfast");
         Food food2= new Food("Arroz chino",2,20,"Launch");
         Food food3= new Food("Pepito",3,20,"Dinner");
         
@@ -49,5 +64,4 @@ public class Ejercicio_restaurante {
             
         
         }
-    */}
-}
+    */
