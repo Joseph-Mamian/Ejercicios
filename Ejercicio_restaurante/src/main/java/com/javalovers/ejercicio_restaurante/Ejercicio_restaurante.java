@@ -9,19 +9,35 @@ public class Ejercicio_restaurante {
         
         Customer administrative= new Customer(CustomerRole.ADMINISTRATIVE, "1", "Pepito Perez");
         Customer student= new Customer(CustomerRole.STUDENT, "1", "Pepito Perez");
-        administrative.sellFood();
-        student.sellFood();
+        System.out.println("BIENVENIDO");
         
         
         Menu menu = new Menu();
         
-        Food breakfast1= new Food(DishType.BREAKFAST, "huevos fritos",2400, "huevos, sal, primienta", 20 );
-        Food breakfast2= new Food(DishType.BREAKFAST, "Caldo",2400, "carne, papa, platano", 20 );
-        Food lunch1= new Food(DishType.LAUNCH, "pastas",2400, "pastas, albondiga, arroz", 20 );
+        Food breakfast1= new Food(DishType.BREAKFAST, "1. Huevos fritos",2400, "huevos, sal, primienta", 20 );
+        Food breakfast2= new Food(DishType.BREAKFAST, "2. Caldo",2400, "carne, papa, platano", 20 );
+        Food lunch1= new Food(DishType.LAUNCH, "1. Pastas",2400, "pastas, albondiga, arroz", 20 );
+        Food lunch2= new Food(DishType.LAUNCH, "2. Arroz chino",2400, "arroz, carne, camarones", 20 );
+        Food dinner1= new Food(DishType.DINNER, "1. Pepito",2400, "salchicha, papa, queso", 20 );
+        Food dinner2= new Food(DishType.DINNER, "2. Arepa con huevo",2400, "arepa, huevo", 20 );
         
         menu.addFood(breakfast1);
         menu.addFood(breakfast2);
         menu.addFood(lunch1);
+        menu.addFood(lunch2);
+        menu.addFood(dinner1);
+        menu.addFood(dinner2);
+        
+        System.out.println(menu.getDishPerType(DishType.BREAKFAST));
+        System.out.println(menu.getDishPerType(DishType.LAUNCH));
+        System.out.println(menu.getDishPerType(DishType.DINNER));
+        
+        student.buyFood();
+        String Type= sc.nextLine();
+        
+        
+        
+        
     }
 }
 

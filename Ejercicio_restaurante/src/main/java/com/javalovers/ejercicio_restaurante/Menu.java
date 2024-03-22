@@ -7,10 +7,7 @@ public class Menu {
 private ArrayList<Food> foodlist;
 
     public Menu() {
-      this.foodlist = new ArrayList<>();
-      
-      
-            
+      this.foodlist = new ArrayList<>();        
     }
 
     public Menu(ArrayList<Food> foodlist) {
@@ -21,7 +18,7 @@ private ArrayList<Food> foodlist;
      this.foodlist.add(food);
     }
     
-    public ArrayList<String> getDishType(DishType dishType){
+    public ArrayList<String> getDishPerType(DishType dishType){
     ArrayList<String> foundDishes = new ArrayList<>();
     
     for(Food food : foodlist){
@@ -32,6 +29,11 @@ private ArrayList<Food> foodlist;
     return foundDishes;
     }
     
-
-    
+    public void showMenu(){
+    for (DishType dishType : DishType.values()) {
+        System.out.println("<---" + dishType + "--->");   
+        
+    }
+   }  
+      
 }
