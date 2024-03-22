@@ -21,15 +21,14 @@ private ArrayList<Food> foodlist;
      this.foodlist.add(food);
     }
     
-    public Arraylist<Food> getDishType(DishType dishType){
-    Arraylist<String> foundDishes = new Arraylist<>();
+    public ArrayList<String> getDishType(DishType dishType){
+    ArrayList<String> foundDishes = new ArrayList<>();
     
     for(Food food : foodlist){
       if(food.getType() == dishType){
-         foundDishes.add(food);
+         foundDishes.add(food.getName());
       }
     }
-    
     return foundDishes;
     }
     

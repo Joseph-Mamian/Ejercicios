@@ -15,9 +15,15 @@ public class Food {
         this.quantity = quantity;
     }
     
-    public Dishtype getType(){
+    public DishType getType(){
     return this.type;
    }
+
+    public String getName() {
+        return name;
+    }
+    
+    
 }
 
 

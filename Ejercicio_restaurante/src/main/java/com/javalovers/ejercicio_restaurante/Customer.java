@@ -10,9 +10,7 @@ public class Customer {
         this.id = id;
         this.fullname = fullname;
     }
-    
-    
- 
+   
     void SayMenu(){
     }
     
